@@ -1,0 +1,30 @@
+* {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(241, 253, 252);
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.forms {
+    background-color: rgb(182, 219, 216);
+    padding: 10px;
+}
+
+#signup_form {
+    float: left;
+    margin-left: 20%;
+}    
+
+#contact_form {
+    float: right;
+    margin-right: 20%;
+}
