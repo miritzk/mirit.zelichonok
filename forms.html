@@ -13,9 +13,9 @@
         <form action="successful_sign_up.html" method="post">
             <!-- full name -->
             <label for="first_name">First name:</label><br>
-            <input type="text" id="first_name" name="first_name"><br>
+            <input type="text" id="first_name" name="first_name" required><br>
             <label for="last_name">Last name:</label><br>
-            <input type="text" id="last_name" name="last_name"><br><br>
+            <input type="text" id="last_name" name="last_name" required><br><br>
             <!-- gender -->
             <label>Gender:</label><br>
             <input type="radio" id="Male" name="gender" value="Male">
@@ -29,16 +29,16 @@
             <input type="date" id="birthdate" name="birthdate"><br><br>
             <!-- email address -->
             <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br><br>
+            <input type="email" id="email" name="email" required><br><br>
             <!-- password -->
             <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br><br>
+            <input type="password" id="password" name="password" required><br><br>
             <!-- favorite color -->
             <!-- <label for="fav_color">Pick your favorite color:</label><br> -->
             <!-- <input type="color" id="fav_color" name="fav_color" value="#ff0000"><br><br> -->
             <!-- student ID -->
             <label for="id_file">Upload your student ID:</label><br>
-            <input type="file" id="id_file" name="id_file"><br><br>
+            <input type="file" id="id_file" name="id_file" accept=".jpg, .png, .pdf"><br><br>
             <!--submit -->
             <input type="submit" value="Submit">
         </form>
@@ -48,15 +48,15 @@
         <form action="thanks_for_contacting.html" method="post">
             <!-- full name -->
             <label for="first_name">First name:</label><br>
-            <input type="text" id="first_name" name="first_name"><br>
+            <input type="text" id="first_name" name="first_name" required><br>
             <label for="last_name">Last name:</label><br>
-            <input type="text" id="last_name" name="last_name"><br><br>
+            <input type="text" id="last_name" name="last_name" required><br><br>
             <!-- email address -->
             <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br><br>
+            <input type="email" id="email" name="email" required><br><br>
             <!-- request -->
             <label for="request">Your Request:</label><br>
-            <textarea id="request" name="request" cols="50" rows="4">Enter your request here</textarea><br><br>
+            <textarea id="request" name="request" cols="50" rows="4" required placeholder="Enter your request here"></textarea><br><br>
             <!--submit -->
             <input type="submit" value="Submit">
         </form>
