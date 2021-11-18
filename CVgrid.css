@@ -1,3 +1,18 @@
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+       transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+}
+
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
@@ -39,6 +54,19 @@ body {
 
 #profile {
     grid-column: 10/13;
+    max-height: 40vh;
+    text-align: center;
+    animation-name: rotating;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-delay: 0.5s;
+}
+
+#my_photo {
+    max-width: 100%;
+    max-height: 100%; 
+    object-fit: contain;
+    border-radius: 15px;
 }
 
 #startio {
@@ -59,7 +87,7 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-    .grid{ 
+    .grid { 
         display: block;
     	padding: 30px;
         margin-block: 10px;    	
@@ -68,4 +96,13 @@ body {
     h3 {
         text-align: center;
     }
-}
+ 
+    #profile {
+        max-height: 100%;
+    }
+
+    #my_photo {
+        max-height: 40vh;
+        width: auto;
+    }
+} 
