@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <link rel="stylesheet" href="CVgrid.css">
-    <script src="CVgrid.js"></script>
+    <link rel="stylesheet" href="cv1.css">
+    <script src="cv1.js"></script>
     <title>Mirit's CV</title>
 </head>
 <body>
@@ -35,7 +35,6 @@
         </div>
 
         <div id='profile' class="grid-item">
-            <!-- <h3>Photo</h3> -->
             <img src="images/me.jpeg" alt="me" id="my_photo">
         </div>
 
@@ -73,6 +72,29 @@
                 English – read, write and speak <br>
                 Russian – read and speak <br>
             </p>
+        </div>
+
+        <div id="contact_form" class="grid-item">
+            <h3>Contact Me</h3>
+            <form action="cv2.html" method="post">
+                <!-- full name -->
+                <label for="full_name">Full Name:</label><br>
+                <input type="text" id="full_name" name="full_name" required><br>
+                <!-- email address -->
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required pattern="\S+@\S+\.\S+"><br><br>
+                <!-- request -->
+                <label for="request">Your Message:</label><br>
+                <textarea id="request" name="request" cols="50" rows="4" required placeholder="Enter your request here"></textarea><br><br>
+                <!-- error message box -->
+                <div>
+                    <p id="error_msg"></p>
+                </div>
+                <!--submit -->
+                <div id="submit_btn">
+                    <input type="submit" value="Submit" onclick="checkEmail()">
+                </div>
+            </form>
         </div>
 
     </div>
